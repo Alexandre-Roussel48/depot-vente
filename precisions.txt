@@ -1,0 +1,40 @@
+Seuls les gestionnaires et admin peuvent ajouter des jeux et pas de photo ( aucune photo n’est fournie avec la base de données en csv du prof) 👍
+Les frais sont globaux et peuvent être ajustés à l'ouverture d'une session par l'admin. 👍
+Les frais ne bougent alors plus pour la session 👎
+Les réductions éventuelles sont, elles, individuelles et ajustée au moment du dépôt 👎
+
+PAS un site de vente en ligne. 👍
+PAS de compte de vendeurs, ni de compte d'acheteur. 👍
+Il faut voir cette application web comme une caisse qui permet l'enregistrement d'un dépôt, d'une vente en présentiel mais éventuellement avec plusieurs postes en // 👍
+EX : un vendeur sera enregistré dans le système par un gestionnaire, ce qui permettra de gérer son compte client, son stock, ses ventes, ses avoirs, etc... mais pas au sens login ! 👍
+Pour le schéma d'architecture globale, schéma qui montre comment les différents composants du système interagissent entre eux, front-end et du back-end. 👎
+Le schéma (MCD) de la base doit apparaître aussi 👍
+PAS de compte vendeur de base. Vous pouvez rajouter cette option mais elle ne doit pas être obligatoire et dans tous les cas, aucun dépôt ne peut se faire en ligne. 👍
+Il faut récupérer les jeux et faire payer les frais de dépôts. Si il y a un compte, le vendeur peut juste accéder à son suivi 👍
+
+## /!\ IMPORTANT
+Nous vous proposons donc le processus d'interaction suivant :
+	Un vendeur (déjà enregistré) souhaite consulter son stock et son chiffre d’affaires auprès du gestionnaire.
+	Le gestionnaire récupère l’adresse email du vendeur et consulte son identite (CNI ou texto sur tel)
+	Le vendeur communique ce code au gestionnaire (si texto)
+	Le gestionnaire saisit ce code dans son interface pour valider l'identité du vendeur et lui fournir les informations demandées.
+## /!\ IMPORTANT
+
+Catalogue des jeux :
+Il est avantageux pour un client d’avoir accès au catalogue des jeux en vente afin de connaître le contenu du magasin. 👍
+Nous proposons donc de mettre en place une page d’accueil (landing page) accessible au public. 👍
+Le reste de l’application est uniquement accessible en réseau local (ou via VPN) pour garantir la sécurité. 👎
+À terme, il est envisageable de répartir les services sur deux serveurs différents pour éviter que des surcharges n’impactent la caisse. 👎
+(Concernant le VPN, nous pouvons le simuler, mais comme il n’y a pas de magasin pour le moment, je propose de l'inclure dans notre diagramme d’architecture comme une tâche à prévoir plus tard.) 👎
+
+Gestion de l’encaissement :
+Il serait utile d’inclure l’impression (theorique) des étiquettes lors du dépôt des jeux. 👎
+Le gestionnaire étiquette les jeux sur place, et ensuite, lors de l’achat, le client amène ces jeux en caisse, et le gestionnaire saisit les étiquettes. 👍
+
+Stockage des moyens de paiement :
+je dépose mes jeux - un gestionnaire enregistre mes coordonnées et saisie ma liste de jeux et les prix => je n'ai pas de login et je ne peux pas consulter à distance
+mais le gestionnaire peut examiner à tout moment mon compte (stock, argent) et je peux donc l'interroger en présentiel. 👍
+
+Quand il récupère des jeux, il serait bon d'éditer un bon de retrait signé pour éviter toute contestation future 👎
+
+A n'importe quel moment pendant la session, en revanche si il ne sont pas récupéré, ils sont "perdus" pour le vendeur 👎
