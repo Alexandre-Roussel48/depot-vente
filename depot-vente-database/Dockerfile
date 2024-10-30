@@ -1,7 +1,0 @@
-FROM postgres:15
-
-ENV POSTGRES_USER=depotvente
-ENV POSTGRES_PASSWORD=alexleo
-ENV POSTGRES_DB=depotvente
-
-EXPOSE 5432

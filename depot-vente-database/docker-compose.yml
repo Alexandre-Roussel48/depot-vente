@@ -1,0 +1,10 @@
+services:
+  postgres_db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: 'depotvente'
+      POSTGRES_USER: 'depotvente'
+      POSTGRES_PASSWORD: 'alexleo'
+    ports:
+      - 5432:5432
